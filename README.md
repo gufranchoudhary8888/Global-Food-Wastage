@@ -1,306 +1,373 @@
-🌍 Global Food Wastage Analysis
+# 🌍 Global Food Wastage Analysis
 
-Economic & Environmental Impact Analysis of Global Food Waste
+### 📊 Economic & Environmental Impact Analysis of Global Food Waste
 
-This project analyzes global food wastage data to understand waste patterns across countries, years, and food categories, along with the associated economic loss, per-capita waste, population, and household waste percentage.
+This project analyzes global food wastage data to understand **food waste patterns, economic impact, country-level differences, food categories, per-capita waste, and household waste**.
 
-The project combines Python-based data analysis with an interactive Power BI dashboard to turn the raw dataset into meaningful insights and visualizations.
+The project uses **Python for data exploration and analysis** and **Power BI for interactive data visualization and dashboard development**.
 
-📊 Dashboard Preview
+---
 
+## 🎯 Project Objective
 
+The main objective of this project is to analyze global food waste and identify meaningful patterns that can help understand its **economic and environmental impact**.
 
-Note: Upload the dashboard screenshot to this repository with the filename dashboard.png so it appears here on GitHub.
+The project focuses on questions such as:
 
-🎯 Project Objectives
+* Which countries generate the most food waste?
+* Which food categories contribute the most to waste?
+* How does food waste change over time?
+* Which countries have the highest waste per capita?
+* Which countries experience the highest economic loss?
+* How significant is household food waste?
+* What relationships exist between population, food waste, and economic loss?
 
-The main objectives of this project are:
+---
 
-Analyze the overall quantity of food waste.
+## 📂 Dataset
 
-Compare food waste across different countries.
+The dataset contains **5,000 records and 8 columns**, covering the period **2018–2024**.
 
-Identify food categories contributing most to waste.
+### Dataset Columns
 
-Analyze food waste trends from 2018 to 2024.
+| Column                      | Description                                    |
+| --------------------------- | ---------------------------------------------- |
+| `Country`                   | Country associated with the food waste record  |
+| `Year`                      | Year of the record                             |
+| `Food Category`             | Category of food being analyzed                |
+| `Total Waste (Tons)`        | Total amount of food waste in tons             |
+| `Economic Loss (Million $)` | Economic loss associated with food waste       |
+| `Avg Waste per Capita (Kg)` | Average food waste per person                  |
+| `Population (Million)`      | Population represented in millions             |
+| `Household Waste (%)`       | Percentage of waste associated with households |
 
-Understand the economic impact of food wastage.
+The dataset was checked for **missing values and duplicate rows**, with the project analysis indicating none were present.
 
-Compare average food waste per capita between countries.
+---
 
-Analyze household food waste percentages.
+## 🛠️ Tools & Technologies
 
-Present the findings through an interactive dashboard.
+### Python
 
-📁 Dataset
+Used for data exploration, validation, statistical analysis, aggregation, and visualization.
 
-The dataset contains 5,000 records and 8 columns covering the period 2018–2024.
+**Libraries:**
 
-Dataset Columns
+* Pandas
+* NumPy
+* Matplotlib
 
-Column
+### Power BI
 
-Description
+Used to build the interactive dashboard.
 
-Country
+**Power BI features:**
 
-Country associated with the food waste record
+* KPI Cards
+* Bar Charts
+* Donut Chart
+* Trend Analysis
+* Interactive Slicers
+* Country Analysis
+* Category Analysis
 
-Year
+### Jupyter Notebook
 
-Year of the record
+Used to document and perform the Python-based analysis.
 
-Food Category
+---
 
-Category of food being analyzed
+## 🔍 Data Analysis Process
 
-Total Waste (Tons)
+### 1. Data Exploration
 
-Total amount of food waste in tons
+The dataset was initially explored to understand its structure and characteristics.
 
-Economic Loss (Million $)
+Analysis included:
 
-Economic loss associated with the food waste
+* Dataset shape
+* First few records
+* Column names
+* Data types
+* Missing values
+* Duplicate records
+* Statistical summary
 
-Avg Waste per Capita (Kg)
+---
 
-Average food waste per person in kilograms
+### 2. Data Validation
 
-Population (Million)
+The dataset was checked for:
 
-Population represented in millions
+* Missing values
+* Duplicate records
+* Data types
+* Numerical columns
+* Categorical columns
+* Value distributions
 
-Household Waste (%)
+---
 
-Percentage of waste associated with households
+### 3. Descriptive Statistics
 
-The analysis confirms that the dataset contains no missing values and no duplicate rows. The year range is 2018–2024.
+Statistical analysis was performed to understand:
 
-🛠️ Tools & Technologies
+* Total food waste
+* Total economic loss
+* Average household waste
+* Minimum values
+* Maximum values
+* Average values
+* Numerical variable distributions
 
-Python
+---
 
-Python
+### 4. Country Analysis 🌎
 
-Pandas
+Food waste and economic loss were aggregated by country to identify differences in food wastage across countries.
 
-Jupyter Notebook
+This helps answer:
 
-Data Visualization & Dashboard
+> Which countries contribute the most to global food waste and economic loss?
 
-Power BI
+---
 
-Interactive filters and slicers
+### 5. Food Category Analysis 🍎
 
-KPI cards
+Food waste was grouped by food category to identify which categories contribute most to overall waste.
 
-Bar charts
+---
 
-Donut chart
+### 6. Year-wise Analysis 📅
 
-Trend analysis
+Food waste was analyzed from **2018 to 2024** to identify changes and trends over time.
 
-🔎 Data Analysis Performed
+---
 
-The Python notebook performs:
+### 7. Per-Capita Analysis 👤
 
-1. Data Exploration
+Average food waste per capita was compared across countries to understand differences in individual-level waste.
 
-Dataset shape
+---
 
-First few records
+### 8. Correlation Analysis 📈
 
-Column names
+Correlation analysis was performed on numerical variables to explore relationships between variables such as:
 
-Data types
+* Population
+* Total food waste
+* Economic loss
+* Waste per capita
+* Household waste
 
-Missing-value checking
+---
 
-Duplicate-value checking
+# 📊 Power BI Dashboard
 
-Statistical summary
+The final analysis was transformed into an interactive Power BI dashboard.
 
-2. Descriptive Analysis
+The dashboard allows users to explore food waste patterns using different filters.
 
-Calculated:
+## 📌 KPIs
 
-Total food waste
+The dashboard includes KPIs such as:
 
-Total economic loss
+* **Total Food Waste (Tons)**
+* **Average Waste per Capita (Kg)**
 
-Average household waste
+---
 
-Minimum and maximum values
+## 📈 Dashboard Visualizations
 
-Statistical summaries of numerical columns
+### 📅 Food Waste Trend
 
-3. Country Analysis
+Shows how total food waste changes across different years.
 
-Food waste and economic loss are grouped by country to identify the countries with the highest values.
+### 🌎 Top Countries by Food Waste
 
-4. Food Category Analysis
+Compares countries based on their total food waste.
 
-Food waste is grouped by food category to identify which categories contribute most to overall waste.
+### 🍎 Food Waste by Category
 
-5. Year-wise Analysis
+Shows the distribution of food waste across different food categories.
 
-Food waste is grouped by year to analyze changes and trends between 2018 and 2024.
+### 💰 Economic Loss by Country
 
-6. Per-Capita Analysis
+Compares the economic loss associated with food waste across countries.
 
-Average waste per capita is compared across countries.
+### 👤 Waste per Capita
 
-7. Correlation Analysis
+Shows average food waste per capita across countries.
 
-Correlation between numerical variables is explored to understand relationships within the dataset.
+### 🏠 Household Waste by Category
 
-📈 Power BI Dashboard
+Compares household waste percentages across different food categories.
 
-The dashboard provides an interactive view of the analysis.
+---
 
-KPI Cards
+## 🎛️ Interactive Filters
 
-Total Food Waste (Tons)
+The dashboard contains slicers for:
 
-Average Waste per Capita (Kg)
+* **Year**
+* **Country**
+* **Food Category**
 
-Visualizations
+These filters allow users to interactively explore specific parts of the dataset.
 
-📅 Food Waste Trend
+---
 
-Shows total food waste by year.
+## 📸 Dashboard Preview
 
-🌎 Top Countries by Food Waste
+![Global Food Wastage Dashboard](dashboard.png)
 
-Compares countries based on total food waste.
+---
 
-🍎 Food Waste by Category
+## 🔄 Project Workflow
 
-Shows the distribution of food waste across food categories.
-
-💰 Economic Loss by Country
-
-Compares economic loss associated with food waste across countries.
-
-👤 Waste per Capita
-
-Shows average food waste per capita by country.
-
-🏠 Household Waste by Category
-
-Compares household waste percentages across food categories.
-
-Interactive Filters
-
-The dashboard includes filters for:
-
-Year
-
-Country
-
-Food Category
-
-These filters allow users to explore specific parts of the dataset.
-
-💡 Key Insights
-
-The analysis helps answer questions such as:
-
-Which countries generate the most food waste?
-
-Which food categories contribute the most to food waste?
-
-How does food waste change from year to year?
-
-Which countries have the highest waste per capita?
-
-Which countries experience the greatest economic loss?
-
-How significant is household waste across food categories?
-
-What relationships exist between population, waste, economic loss, and per-capita waste?
-
-Important: Dashboard KPI values change when filters such as Year, Country, or Food Category are applied. Therefore, displayed values should be interpreted according to the selected filters.
-
-📂 Project Structure
-
-Global-Food-Wastage/
-│
-├── GLOBAL_FOOD_WASTAGE.ipynb
-├── global_food_wastage_dataset(6).csv
-├── dashboard.png
-└── README.md
-
-🚀 How to Run the Python Analysis
-
-1. Clone the repository
-
-git clone https://github.com/gufranchoudhary8888/Global-Food-Wastage.git
-
-2. Open the project
-
-cd Global-Food-Wastage
-
-3. Install the required Python library
-
-pip install pandas jupyter
-
-4. Start Jupyter Notebook
-
-jupyter notebook
-
-5. Open
-
-GLOBAL_FOOD_WASTAGE.ipynb
-
-Make sure the CSV dataset is present in the same folder before running the notebook.
-
-📊 Dashboard Workflow
-
+```text
 Raw Dataset
      ↓
 Data Exploration
      ↓
 Data Validation
      ↓
-Data Analysis using Python/Pandas
+Data Analysis using Python
      ↓
-Aggregations & KPIs
+Aggregations & Statistical Analysis
      ↓
-Power BI Dashboard
+Power BI
      ↓
-Interactive Insights
+Interactive Dashboard
+     ↓
+Business Insights
+```
 
-🎓 Project Type
+---
 
-Data Analytics / Data Visualization Project
+## 💡 Business Questions Answered
+
+This project helps answer:
+
+1. Which countries generate the most food waste?
+2. Which food categories contribute most to food waste?
+3. How does food waste change from year to year?
+4. Which countries have the highest waste per capita?
+5. Which countries experience the greatest economic loss?
+6. How significant is household food waste?
+7. What relationships exist between population, waste, and economic loss?
+
+---
+
+## 🎓 Skills Demonstrated
 
 This project demonstrates practical skills in:
 
-Data Cleaning & Validation
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Exploratory Data Analysis (EDA)**
+* **Data Validation**
+* **Descriptive Statistics**
+* **Data Aggregation**
+* **Correlation Analysis**
+* **Data Visualization**
+* **Power BI**
+* **Dashboard Development**
+* **KPI Design**
+* **Interactive Slicers**
+* **Business Insight Generation**
+* **Data Storytelling**
 
-Exploratory Data Analysis (EDA)
+---
 
-Data Aggregation
+## 📁 Project Structure
 
-Statistical Analysis
+```text
+Global-Food-Wastage/
+│
+├── GLOBAL_FOOD_WASTAGE.ipynb
+├── global_food_wastage_dataset(6).csv
+├── dashboard.png
+└── README.md
+```
 
-Data Visualization
+### File Description
 
-Power BI Dashboard Development
+| File                                 | Purpose                      |
+| ------------------------------------ | ---------------------------- |
+| `GLOBAL_FOOD_WASTAGE.ipynb`          | Python analysis and EDA      |
+| `global_food_wastage_dataset(6).csv` | Dataset used for the project |
+| `dashboard.png`                      | Power BI dashboard preview   |
+| `README.md`                          | Project documentation        |
 
-Business Insight Generation
+---
 
-👨‍💻 Author
+## 🚀 How to Run the Python Analysis
 
-Gufran Choudhary
+### 1. Clone the repository
 
-GitHub: @gufranchoudhary8888
+```bash
+git clone https://github.com/gufranchoudhary8888/Global-Food-Wastage.git
+```
 
-⭐ If You Like This Project
+### 2. Open the project
+
+```bash
+cd Global-Food-Wastage
+```
+
+### 3. Install required libraries
+
+```bash
+pip install pandas numpy matplotlib jupyter
+```
+
+### 4. Start Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+### 5. Open
+
+```text
+GLOBAL_FOOD_WASTAGE.ipynb
+```
+
+Make sure the CSV dataset is present in the same directory as the notebook.
+
+---
+
+## 📌 Project Type
+
+**Data Analytics & Data Visualization Project**
+
+This project demonstrates an end-to-end beginner-friendly data analytics workflow:
+
+> **Dataset → Python → EDA → Statistical Analysis → Power BI → Dashboard → Insights**
+
+---
+
+## 👨‍💻 Author
+
+### Gufran Choudhary
+
+**Aspiring Data Analyst**
+
+Skills:
+`Python` · `Pandas` · `NumPy` · `Power BI` · `Data Analytics`
+
+GitHub: **@gufranchoudhary8888**
+
+---
+
+## ⭐ If You Like This Project
 
 If you found this project useful, consider giving the repository a ⭐ on GitHub.
 
-📜 License
+---
 
-This project is intended for educational and portfolio purposes.
+## 📜 License
+
+This project is created for **educational and portfolio purposes**.
